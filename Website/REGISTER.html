@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="html,html5,css,css3,javascript,website,design" />
+<meta name="author" content="vishwam" />
+<link rel="stylesheet" type="text/css" href="vishwam.css" media="all" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<header role="banner">
+<div style="max-width:100%">
+<img class="mySlides" src="images/pic.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic1.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic2.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic3.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic4.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic5.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic6.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic7.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic8.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic9.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+<img class="mySlides" src="images/pic10.jpg" alt="Image" width="100%" height="100%" style="width:100%" />
+</div>
+</header>
+<script type="text/javascript" src="vishwam.js"></script>
+
+<nav class="steve">
+<!--Horizontal Bar-->
+<div id="nav">
+   <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PHOTOS.html" >Photos</a></li>
+	  <li class="drop">
+	  <a href="javascript:void(0)" class="btn">Media</a>
+	  <div class="drop-content">
+	  <a href="MEDIA.html">Video</a>
+	  <a href="MEDIA.html">Audio</a>
+	  </div>
+	  <li><a href="ABOUT.html" >About</a></li>
+	  <li><a href="CONTACT.html" >Contact</a></li>
+	  <li><a href="REGISTER.html" class="active">Register</a></li>
+	  <li><a href="LOGIN.html" >Login</a></li>
+	  <li><a href="STUDENT.html" > Visitor </a></li>
+   </ul>
+</div>
+<!--Left Navigation Bar-->
+   <div class="dropdown" style="float:left;">
+      <button class="dropbtn">Left</button>
+	  <div class="dropdown-content" style="left:0;">
+	  <a href="INDEX.html">Home</a>
+	  <a href="PHOTOS.html"> Photos </a>
+	  <a href="MEDIA.html"> Media </a>
+	  <a href="ABOUT.html"> About </a>
+	  <a href="CONTACT.html"> Contact </a>
+	  <a href="REGISTER.html" class="active"> Register </a>
+	  <a href="LOGIN.html"> Login </a>
+	  <a href="STUDENT.html" > Visitor </a>
+   </div>
+</div>
+<!--Right Navigation Bar-->
+   <div class="dropdown" style="float:right;">
+      <button class="dropbtn">Right</button>
+	  <div class="dropdown-content">
+	  <a href="INDEX.html">Home</a>
+	  <a href="PHOTOS.html"> Photos </a>
+	  <a href="MEDIA.html"> Media </a>
+	  <a href="ABOUT.html"> About </a>
+	  <a href="CONTACT.html"> Contact </a>
+	  <a href="REGISTER.html" class="active"> Register </a>
+	  <a href="LOGIN.html"> Login </a>
+	  <a href="STUDENT.html" > Visitor </a>
+   </div>
+</div>
+</nav>
+<!--this is a heading-->
+<div id="title">
+<h1 align="center" style="color:blue"> REGISTER</h1>
+</div>
+
+<!--this is a sign up form-->
+<br />
+<div align="center">
+	<div id="register" class="Regform">
+		<form id="Reg" action="LOGIN.html" method="post" enctype="multipart/form-data">
+			<h2>Sign up</h2>
+			<p>
+				<label for="firstname" class="fname"> First Name </label>
+				<input id="firstname" name="firstname" type="text" required="required" placeholder="Hello"/>
+			</p>
+			<p>
+				<label for="lastname" class="lname"> Last Name </label>
+				<input id="lastname" name="lastname" type="text" required="required" placeholder="World"/>
+			</p>
+			<p>
+				<label for="emailsignup" class="mail"> Your email </label>
+				<input id="emailsignup" name="emailsignup" type="email" required="required" placeholder="xyz@gmail.com"/>
+			</p>
+			<p>
+				<label for="passwordsignup" class="passwd"> Password </label>
+				<input id="passwordsignup" name="passwordsignup" type="password" required="required" placeholder="**********"/>
+			</p>
+			<p>
+				<label for="passwordsignup_comfirm" class="passwd"> Confirm </label>
+				<input id="passwordsignup_comfirm" name="passwordsignup_comfirm" type="password" required="required" placeholder="**********"/>
+			</p>
+			<p>
+				<label for="country"> Country </label>
+				<select id="country" name="country">
+					<option value="india"> India </option>
+					<option value="nepal"> Nepal </option>
+					<option value="canada"> Canada </option>
+					<option value="usa"> USA </option>
+				</select>
+			</p>
+			<p>
+				<label for="age" class="birth"> Birth Day </label>
+				<input type="date" name="DOB" required="required"/>
+			</p>
+			<!--p>
+				<label for="course" class="learn"> Course: </label>
+				<input type="checkbox" name="course1" value="java">Java
+				<input type="checkbox" name="course2" value="c++">C++
+				<input type="checkbox" name="course3" value="python">Python
+			</p-->
+			<p>
+				<label for="sex" class="robot"> Gender: </label>
+				<input type="radio" name="gender" value="male" checked> Male
+				<input type="radio" name="gender" value="female"> Female
+				<input type="radio" name="gender" value="other"> Other
+			</p>
+			<p class="signin button">
+				<input type="submit" value="Sign up" />
+			</p>
+			<p class="already">
+				Already a member?
+				<a href="LOGIN.html" class="to_register">Login</a>
+			</p>
+		</form>
+	</div>
+</div>
+<br />
+
+</body>
+</html>
