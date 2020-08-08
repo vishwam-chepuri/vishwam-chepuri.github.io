@@ -40,7 +40,7 @@ animation01
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: #845b46;
+    background-color: #427e80;
     opacity: 0;
 }
 .line01{
@@ -688,7 +688,7 @@ orange circle
 .orange01{
     width: 27vw;
     height: 27vw;
-    background: #f47141;
+    background:#126BBF;
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -724,11 +724,11 @@ orange circle
     }
     50.01% {
         transform: rotate(-360deg);
-        background: #f47141;
+        background:#126BBF;
     }
     100% {
         transform: rotate(-360deg);
-        background: #f47141;
+        background:#126BBF;
     }
 }
 
@@ -756,14 +756,17 @@ orange circle
     animation: name 1.0s cubic-bezier(0.165, 0.84, 0.44, 1) 5.9s forwards;
     opacity: 0;
 }
+
+
 .name p{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #FFFFFF;/* #ff8133; */
     font-size: 2.0vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-variant: small-caps;
+    font-family: Grange_Shadow;/* "Trebuchet MS", Verdana, sans-serif *//* 'Gill Sans'; *//* , 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     letter-spacing: 0.1em;
 }
 .name_circle01{

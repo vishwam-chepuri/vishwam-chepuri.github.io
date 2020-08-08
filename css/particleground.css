@@ -77,10 +77,10 @@ body {
   left: 50%;
   /* transform: translate(-50%, -50%); */
   transform: translate(-50%,0);
-  background: rgba(12, 17, 61,1.0); /* linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */ 
-  width: 50%;
-  height: 50%;
-  opacity: 0.8;
+  background: rgba(255, 255, 179,0.2)/* rgba(255, 17, 61,0.5) */; /* linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */ 
+  width: 40%;
+  height: 85%;
+  opacity: 1;
   border-radius: 25px;
   overflow: hidden;
 }
