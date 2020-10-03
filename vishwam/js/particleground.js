@@ -363,7 +363,7 @@
   };
 
   window[pluginName].defaults = {
-    minSpeedX: 0.1,
+    minSpeedX: 0.2,
     maxSpeedX: 0.7,
     minSpeedY: 0.1,
     maxSpeedY: 0.7,
@@ -377,7 +377,7 @@
     curvedLines: false,
     proximity: 100, // How close two dots need to be before they join
     parallax: true,
-    parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
+    parallaxMultiplier: 4, // The lower the number, the more extreme the parallax effect
     onInit: function() {},
     onDestroy: function() {}
   };

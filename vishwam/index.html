@@ -3,37 +3,62 @@
 <head>
 	<title>VISHWAM</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!--meta http-equiv="refresh" content="600" /-->
 	<meta name="description" content="Vishwam's website" />
 	<meta name="keywords" content="Vishwam, Chepuri" />
-	<link rel="shortcut icon" type="image/png" href="android-chrome-512x512.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/particleground.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://kit.fontawesome.com/2c8c6b1793.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	<style >
-		@font-face {
-			font-family: Grange_Shadow;
-			src: url(fonts/Grange_Shadow.ttf);
-		}
-	</style>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<script type="text/javascript" src="js/particleground.js"></script>
 	<script type="text/javascript" src="js/particleground-demo.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 </head>
 
-<body style='background:black;'>
+<body class='background'>
 <div  id="particles">
-		<div id="intro1" class="container">
-		<div class='container row'>
-		<h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">
-			Vishwam Chepuri&nbsp
-			<a href="#" style="color: white;">
-			</a>
-		</h2>
-      	<hr>
-		</div>
+		<div id="intro"	>
+			<div class='container '>
+			<h2 class='name'>
+				Vishwam Chepuri
+			</h2>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide project">Slide 1</div>
+					<div class="swiper-slide project">Slide 2</div>
+					<div class="swiper-slide project">Slide 3</div>
+					<div class="swiper-slide project">Slide 4</div>
+					<div class="swiper-slide project">Slide 5</div>
+					<div class="swiper-slide project">Slide 6</div>
+					<div class="swiper-slide project">Slide 7</div>
+					<div class="swiper-slide project">Slide 8</div>
+					<div class="swiper-slide project">Slide 9</div>
+					<div class="swiper-slide project">Slide 10</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 		
 		
 		</div>
