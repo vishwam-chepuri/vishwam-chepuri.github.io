@@ -17,7 +17,7 @@
    
 ## .SVG Icons for websites  
 
-   - For details : [SVG Icons](https://vishwam-chepuri.github.io/SVG-ICONS/)
+   - For details : [SVG Icons](https://vishwam-chepuri.github.io/svgs/)
 
 
 For more details see [GitHub @vishwam-chepuri](https://github.com/vishwam-chepuri).
