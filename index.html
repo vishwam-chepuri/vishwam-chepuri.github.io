@@ -1,25 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>VISHWAM</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="robots" content="index,follow" />
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/particles.css" />
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	<script type="text/javascript" src="js/particleground.js"></script>
-	<script type="text/javascript" src="js/particleground-demo.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwam Chepuri</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2c8c6b1793.js" crossorigin="anonymous"></script>
 </head>
-	<div  id="particles">
-		<div id="intros">			
-		
-		</div>
-	</div>
-	
-	
 <body>
-
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        
+        <header class="name-header">Vishwam Chepuri</header>
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="sidebar-content">
+                    <ul class="sidebar-lists categories">
+                        <li class="list-item" data-scroll-to="#about" tabindex="0">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="hide-on-medium-screen">About</span>
+                        </li>
+                        <li class="list-item" data-scroll-to="#skills" tabindex="0">
+                            <i class="fa-solid fa-code"></i>
+                            <span class="hide-on-medium-screen">Skills</span>
+                        </li>
+                        <li class="list-item" data-scroll-to="#experience" tabindex="0">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span class="hide-on-medium-screen">Experience</span>
+                        </li>
+                        <li class="list-item" data-scroll-to="#projects" tabindex="0">
+                            <i class="fa-solid fa-project-diagram"></i>
+                            <span class="hide-on-medium-screen">Projects</span>
+                        </li>
+                        <li class="list-item" data-scroll-to="#achievements" tabindex="0">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span class="hide-on-medium-screen">Achievements</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="sidebar-lists social-links">
+                        <li>
+                            <a class="list-item" href="https://github.com/vishwam-chepuri" target="_blank" tabindex="0">
+                                <i class="fa-brands fa-github"></i>
+                                <span class="hide-on-medium-screen">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="https://www.hackerrank.com/vishwam_chepuri" target="_blank" tabindex="0">
+                                <i class="fa-brands fa-hackerrank"></i>
+                                <span class="hide-on-medium-screen">HackerRank</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="https://leetcode.com/vishwam_chepuri/" target="_blank" tabindex="0">
+                                <i class="fa-solid fa-code"></i>
+                                <span class="hide-on-medium-screen">LeetCode</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="right-content">
+                
+                <div class="scrollable-content">
+                    <section id="about">
+                        <div class="section-content about-me">
+                            <p>I'm a passionate Full Stack Developer with over 4 years of experience in building scalable and high-performing web applications. I specialize in modern frontend and backend technologies, crafting seamless user experiences, and optimizing system performance, with a deep understanding of JavaScript, React, Node.js, and databases, I love solving complex problems, architecting efficient solutions, and staying up-to-date with the latest industry trends.</p>
+                            <p>When I'm not coding, you can find me reading books, playing chess, or exploring new places.</p>
+                            <p>I thrive on building impactful applications that not only function efficiently but also deliver exceptional user experiences.</p>
+                        </div>
+                    </section>
+                    
+                    <section id="skills">
+                        <h2>My Skills</h2>
+                        <div class="section-content skill-grid">
+                            <div class="skill-card">
+                                <div class="skill-logo-container">
+                                    <img src="images/skills/html.png" alt="HTML" class="skill-logo">
+                                </div>
+                                <div class="skill-name">HTML</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-logo-container">
+                                    <img src="images/skills/css.png" alt="CSS" class="skill-logo">
+                                </div>
+                                <div class="skill-name">CSS</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-logo-container">
+                                    <img src="images/skills/javascript.png" alt="JavaScript" class="skill-logo">
+                                </div>
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-logo-container">
+                                    <img src="images/skills/react.png" alt="React" class="skill-logo">
+                                </div>
+                                <div class="skill-name">React</div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="experience">
+                        <h2>Work Experience</h2>
+                        <div class="section-content experiences">
+                            <div class="experience">
+                                <div class="experience-content">
+                                    <div class="experience-heading">
+                                        <div class="role-and-company">Software Engineer - XYZ Company</div>
+                                        <div class="experience-date">Jan 2021 - Present</div>
+                                    </div>
+                                    <ul class="experience-details">
+                                        <li>Developed and optimized full-stack applications using React and Node.js.</li>
+                                        <li>Designed scalable REST APIs and integrated third-party services.</li>
+                                        <li>Implemented CI/CD pipelines for seamless deployment.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="experience">
+                                <div class="experience-content">
+                                    <div class="experience-heading">
+                                        <div class="role-and-company">Software Engineer - XYZ Company</div>
+                                        <div class="experience-date">Jan 2021 - Present</div>
+                                    </div>
+                                    <ul class="experience-details">
+                                        <li>Created interactive UI components with React and Tailwind CSS.</li>
+                                        <li>Developed backend microservices with Node.js and MongoDB.</li>
+                                        <li>Improved website performance, reducing load time by 30%.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <div class="section-content project-grid">
+                            <div class="project-card">
+                                <div class="project-title">Project 1</div>
+                                <div class="project-details">
+                                    <div class="project-description">This is some project and this is a container for that project</div>
+                                    <ul class="">
+                                        <li class="list-item">Created interactive UI components with React and Tailwind CSS.</li>
+                                        <li class="list-item">Developed backend microservices with Node.js and MongoDB.</li>
+                                        <li class="list-item">Improved website performance, reducing load time by 30%.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-title">Project 2</div>
+                                <div class="project-details">
+                                    <ul class="">
+                                        <li class="list-item">Created interactive UI components with React and Tailwind CSS.</li>
+                                        <li class="list-item">Developed backend microservices with Node.js and MongoDB.</li>
+                                        <li class="list-item">Improved website performance, reducing load time by 30%.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="achievements">
+                        <h2>Achievements</h2>
+                        <div class="section-content achievements-list">
+                            <ul>
+                                <li class="list-item">Achievement 1</li>
+                                <li class="list-item">Achievement 2</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
