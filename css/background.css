@@ -1,0 +1,57 @@
+
+/* --------------------------------------------   BACKGROUND   ------------------------------------------- */
+
+/* Background Animation */
+.background-animation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    /* background: linear-gradient(180deg, #1A005F, #32007A, #5200B0, #FF007F, #FF8800); */
+    background: linear-gradient(45deg, #1A005F, #41045df4, #03614e, #5200B0, #d67301);
+    /* background: radial-gradient(circle, #005f11, #7a2f00, #5200B0, #3c0b77d7, #121212); */
+    /* animation: rotate-swoosh 20s linear infinite; */
+}
+
+.background-animation::before,
+.background-animation::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -50%;
+    left: -50%;
+    background: 
+                radial-gradient(circle, #01255bef 15%, #c81a1aef 25%, transparent 30%),
+                radial-gradient(circle, #154d67ea  40%, #02175b 50%, transparent 55%),
+                radial-gradient(circle, #0bab03eb  65%, #cb0018e3 90%);
+    mix-blend-mode: screen;
+    animation: waveAnimation 8s infinite alternate ease-in-out;
+    filter: blur(40px);
+}
+ 
+.background-animation::after {
+    width: 200%;
+    height: 200%;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    background: radial-gradient(circle, rgba(101, 74, 15, 0.9) 15%, transparent 25%),
+                radial-gradient(circle, rgba(109, 14, 109, 0.9) 25%, transparent 35%),
+                radial-gradient(circle, rgba(24, 60, 88, 0.9) 35%, transparent 80%);
+    filter: blur(30px);
+}
+
+@keyframes rotate-swoosh {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }    
+}
+
+@keyframes waveAnimation {
+    0% { transform: translate(0, 0) scale(1); }
+    20% { transform: translate(5%, 5%) scale(1.2); }
+    40% { transform: translate(5%, -5%) scale(1.1); }
+    60% { transform: translate(-5%, 5%) scale(0.9); }
+    80% { transform: translate(-5%, -5%) scale(1.3); }
+    100% { transform: translate(0, 0) scale(1); }
+}

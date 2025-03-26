@@ -1,0 +1,60 @@
+/* --------------------------------------------   SECTION - PROJECTS   ------------------------------------------- */
+
+/* Projects Grid */
+.project-grid {
+    max-width: 950px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .project-card {
+        background: var(--card-background-color);
+        flex: 1;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        min-width: min(350px, 100%);
+        /* cursor: pointer; */
+
+        &:hover, &:focus {
+            transform: scale(1.005);
+            background-color: var(--card-hover-color);
+        }
+
+        .project-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .project-details {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: calc(20/14);
+            margin-bottom: 10px;
+
+            .project-description {
+                margin-bottom: 10px;
+            }
+
+            ul {
+                .list-item {
+                    margin-bottom: 5px;
+                    padding: 0px;
+                    padding-left: 20px;
+                }
+
+                .list-item::before {
+                    content: "■";
+                    position: relative;
+                    left: -10px;
+                    top: -3px;
+                    height: 12px;
+                    color: #FFF;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* --------------------------------------------   SECTION - ABOUT ME   ------------------------------------------- */
+
+/* About me */
+#about {
+    margin-top: -20px;
+    padding-top: 20px;
+    margin-left: -10px;
+
+    .about-me {
+        background-color: var(--card-background-color);
+        border-radius: 10px;
+        padding: 25px 30px;
+        line-height: calc(25/16);
+        font-size: 16px;
+        font-weight: 500;
+        max-width: max(500px, 95%);
+
+        p { margin-bottom: 10px;}
+
+    }
+}

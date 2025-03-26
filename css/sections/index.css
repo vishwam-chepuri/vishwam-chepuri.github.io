@@ -1,0 +1,31 @@
+@import url('about.css');
+@import url('skills.css');
+@import url('experience.css');
+@import url('education.css');
+@import url('projects.css');
+@import url('achievements.css');
+@import url('contact.css');
+
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    & > h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .section-heading {
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .section-content {
+        margin-left: 15px;
+    }
+}

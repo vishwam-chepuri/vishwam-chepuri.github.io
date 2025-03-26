@@ -1,48 +1,23 @@
-/*=================
-Basic style
-==================*/
-html, body{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #212022;
-  margin: 0;
-  line-height: calc(20/14);
-  -webkit-font-smoothing: antialiased;
-  font-family: "Playfair Display", 'Montserrat', sans-serif;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-  
-/* #1A120B #3C2A21 #D5CEA3 #E5E5CB */
-/* #1E201E #3C3D37 #697565 #ECDFCC */
-#particles {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import url('reset.css');
+@import url('background.css');
+@import url('layout.css');
+@import url('sections/index.css');
+
+/* Media Queries Start */
+@media screen and (max-width: 1100px) {
+    .hide-on-medium-screen {
+        display: none;
+    }
 }
 
-#intros {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 0px !important;
-  background-color: rgb(10, 11, 14);
-  width: 90%;
-  height: 95%;
-  opacity: 0.925;
-  border-radius: 20px;
-  overflow-y: scroll;
-
-  /* hiding scrollbar */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar { display: none; }
+@media screen and (max-width: 768px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+    .sidebar-lists {
+        .list-item {
+            font-size: 14px;
+        }
+    }
 }
+/* Media Queries End */
