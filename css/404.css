@@ -25,10 +25,15 @@ body {
 }
 
 .error-container {
+    padding: 20px;
+    border-radius: 8px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid #00ff001d;
 }
 
 /* Glitch Effect */
@@ -57,17 +62,29 @@ body {
     border-radius: 10px;
 }
 
+.terminal-text {
+    font-weight: 700;
+    color: #FFFFFFaa;
+}
+
 .glitch-button {
     position: relative;
     display: inline-block;
     padding: 12px 24px;
     font-size: 20px;
-    font-weight: bold;
-    color: #fff;
+    font-weight: 800;
+    color: #FFFFFF;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
     overflow: hidden;
-    transition: 0.3s;
+    /* transition: 0.3s; */
+    border-radius: 8px;
+    &:hover {
+        /* background-color: rgba(0, 0, 0, 0.3); */
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        border: 1px solid #00ff001d;
+    }
 }
